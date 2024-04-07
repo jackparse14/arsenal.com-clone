@@ -1,6 +1,19 @@
 *{
     box-sizing: border-box;
+    margin: 0;
+}
+
+:root{
+    --red: #f00000;
+    --dark: #151d2d;
+    --white: #ffffff;
+    --light-gray: #f1f2f3;
 }
 body{
-    background-color: aqua;
+    background-color: var(--light-gray);
+}
+header{
+    background-color: var(--red);
+    width: 100%;
+    height: 100px;
 }

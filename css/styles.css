@@ -12,9 +12,29 @@
 body{
     background-color: var(--light-gray);
 }
-header{
-    background-color: var(--red);
+
+.header{
     width: 100%;
+}
+#main-header{
+    background-color: var(--red);
+    height: 75px;
+}
+#sponser-header{
+    background-color: var(--dark);
+    height: 45px;
+}
+#sponser-header > ul{
+    display: flex;
+    list-style: none;
+}
+#header-logo{
+    height:80%;
+}
+.sponser {
+    height: 100%;
+    width: 100%;
+    color: black;
     height: 100px;
 }
 .height-100{

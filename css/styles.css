@@ -35,4 +35,27 @@ body{
     height: 100%;
     width: 100%;
     color: black;
+    height: 100px;
+}
+.height-100{
+    height: 100%;
+}
+
+.container-lg{
+    width: 70%;
+    height:100%;
+
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    height:100vh;
+}
+footer{
+    height:300px;
+    background-color: var(--dark);
+    border-top: solid var(--red) 3px;
 }

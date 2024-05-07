@@ -4,47 +4,103 @@
 }
 
 :root{
+    --dark-red: #c61613;
     --red: #f00000;
+    --light-red: #f43a3a;
     --dark: #151d2d;
     --white: #ffffff;
     --light-gray: #f1f2f3;
+    --white-filter: brightness(0) saturate(100%) invert(100%) sepia(1%) saturate(2%) hue-rotate(205deg) brightness(106%) contrast(100%);
 }
 body{
     background-color: var(--light-gray);
 }
-
-.header{
+button{
+    height:100%;
+    background-color: var(--red);
+    color: var(--white);
+    border: none;
+}
+#nav-2 > li > button{
+    font-size: 1.3em;
+    padding: 20px;
+}
+#nav-2 > li > button:hover{
+    border-bottom: 8px solid var(--white);
+}
+header{
     width: 100%;
+    background-color: var(--red);
+    height: 175px;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
 }
 #main-header{
-    background-color: var(--red);
-    height: 75px;
+    height: 40%;
 }
-#sponser-header{
-    background-color: var(--dark);
-    height: 45px;
+#second-header{
+    height: 60%;
+    border-top: 1px solid var(--light-red);
 }
-#sponser-header > ul{
-    display: flex;
+#nav{
     list-style: none;
+    display: flex;
+    
+}
+#nav > li > button{
+    font-size: 1em;
+    padding: 20px;
+    font-weight: bold;
+}
+#nav-2{
+    list-style: none;
+    display: flex;
+    width: 100%;
+    margin-left: 150px;
+}   
+#sponser-nav{
+    height: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: end;
+    gap: 15px;
+}
+#sponser-nav > li{
+    height: 100%;
+    width:70px;
 }
 #header-logo{
-    height:80%;
+    position: absolute;
+    top: 40px;
+    width: 140px;
 }
 .sponser {
     height: 100%;
     width: 100%;
-    color: black;
-    height: 100px;
+    filter: var(--white-filter);
+}
+
+#profile-icon-bg{
+    border-radius: 50%;
+    background-color: var(--dark-red);
+    width: 50px;
+    height: 50px;
+}
+#profile-icon{
+    width:25px;
+}
+#search-icon{
+    width:50px;
 }
 .height-100{
     height: 100%;
 }
 
 .container-lg{
-    width: 70%;
+    width: 78%;
     height:100%;
-
 }
 .center{
     display: flex;

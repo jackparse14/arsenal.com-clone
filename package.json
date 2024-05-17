@@ -1,0 +1,32 @@
+{
+  "name": "arsenal.com-clone",
+  "version": "1.0.0",
+  "description": "A clone website of arsenal.com",
+  "main": "dist/app.js",
+  "scripts": {
+    "dev": "tsx watch app.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jackparse14/arsenal.com-clone.git"
+  },
+  "author": "jackparse14",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jackparse14/arsenal.com-clone/issues"
+  },
+  "homepage": "https://github.com/jackparse14/arsenal.com-clone#readme",
+  "dependencies": {
+    "express": "^4.19.2",
+    "tsx": "^4.10.4"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.12.12",
+    "dotenv": "^16.4.5",
+    "eslint": "^9.2.0",
+    "prettier": "^3.2.5",
+    "typescript": "^5.4.5"
+  },
+  "type": "module"
+}

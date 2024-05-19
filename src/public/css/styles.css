@@ -4,6 +4,7 @@
 }
 
 :root{
+    --darkest-red: #9e120f;
     --dark-red: #c61613;
     --red: #f00000;
     --light-red: #f43a3a;
@@ -113,8 +114,13 @@ header{
     width: 50px;
     height: 50px;
 }
+#profile-icon-bg:hover{
+    transition: background-color 0.5s;
+    background-color: var(--darkest-red);
+}
 #profile-icon{
-    width:25px;
+    width: 25px;
+    height: 25px;
 }
 #search-icon{
     width:50px;

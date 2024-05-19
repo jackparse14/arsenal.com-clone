@@ -4,7 +4,10 @@
   "description": "A clone website of arsenal.com",
   "main": "dist/app.js",
   "scripts": {
-    "dev": "tsx watch app.ts"
+    "dev": "tsx watch dist/app.js",
+    "build": "npm run clean && tsc --build && npm run copy-assets",
+    "copy-assets": "copyfiles -u 1 \"src/public/**/!(*.ts)\" dist/",
+    "clean": "rimraf dist"
   },
   "repository": {
     "type": "git",
@@ -26,9 +29,11 @@
     "@types/node": "^20.12.12",
     "@typescript-eslint/eslint-plugin": "^7.9.0",
     "@typescript-eslint/parser": "^7.9.0",
+    "copyfiles": "^2.4.1",
     "dotenv": "^16.4.5",
     "eslint": "^8.57.0",
     "prettier": "^3.2.5",
+    "rimraf": "^5.0.7",
     "typescript": "^5.4.5",
     "typescript-eslint": "^7.9.0"
   },

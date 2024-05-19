@@ -1,4 +1,4 @@
-import express, { Express, Request, Response } from "express";
+import express, { Express } from "express";
 import path from "path";
 import dotenv from "dotenv";
 import { fileURLToPath } from "url";
@@ -6,13 +6,13 @@ import { fileURLToPath } from "url";
 dotenv.config();
 
 const app: Express = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT ?? "3000";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const staticHandler = express.static(path.join(__dirname, "public"));
-const bodyParser = express.urlencoded();
+// const bodyParser = express.urlencoded();
 
 //  Middleware
 app.use(staticHandler);
